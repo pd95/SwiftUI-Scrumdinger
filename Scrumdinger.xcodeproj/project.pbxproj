@@ -16,6 +16,7 @@
 		17819373259CE86500F2F0D5 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17819372259CE86500F2F0D5 /* Color+Codable.swift */; };
 		17819378259CEBE700F2F0D5 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17819377259CEBE700F2F0D5 /* ScrumsView.swift */; };
 		1781937C259CEED800F2F0D5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781937B259CEED800F2F0D5 /* DetailView.swift */; };
+		1781937F259CF20400F2F0D5 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781937E259CF20400F2F0D5 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		17819372259CE86500F2F0D5 /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		17819377259CEBE700F2F0D5 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		1781937B259CEED800F2F0D5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1781937E259CF20400F2F0D5 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1781936F259CE76800F2F0D5 /* CardView.swift */,
 				17819377259CEBE700F2F0D5 /* ScrumsView.swift */,
 				1781937B259CEED800F2F0D5 /* DetailView.swift */,
+				1781937E259CF20400F2F0D5 /* EditView.swift */,
 				17819375259CE86D00F2F0D5 /* Models */,
 				1781935D259CE16500F2F0D5 /* Assets.xcassets */,
 				17819362259CE16500F2F0D5 /* Info.plist */,
@@ -165,6 +168,7 @@
 			files = (
 				1781935C259CE16400F2F0D5 /* MeetingView.swift in Sources */,
 				17819378259CEBE700F2F0D5 /* ScrumsView.swift in Sources */,
+				1781937F259CF20400F2F0D5 /* EditView.swift in Sources */,
 				1781936C259CE6DA00F2F0D5 /* DailyScrum.swift in Sources */,
 				1781937C259CEED800F2F0D5 /* DetailView.swift in Sources */,
 				17819370259CE76800F2F0D5 /* CardView.swift in Sources */,
