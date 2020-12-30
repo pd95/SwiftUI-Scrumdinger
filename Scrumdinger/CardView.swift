@@ -30,7 +30,7 @@ struct CardView: View {
         }
         .padding()
         .foregroundColor(scrum.color.accessibleFontColor)
-   }
+    }
 }
 
 struct CardView_Previews: PreviewProvider {

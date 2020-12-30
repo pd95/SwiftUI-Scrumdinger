@@ -22,7 +22,7 @@ struct MeetingHeaderView: View {
         minutesRemaining == 1 ? "minute" : "minutes"
     }
     let scrumColor: Color
-
+    
     var body: some View {
         VStack {
             ProgressView(value: progress)

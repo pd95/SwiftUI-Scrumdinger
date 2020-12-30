@@ -1,6 +1,6 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-*/
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import Foundation
 
@@ -24,12 +24,12 @@ class ScrumTimer: ObservableObject {
     @Published var secondsRemaining = 0
     /// All meeting attendees, listed in the order they will speak.
     @Published var speakers: [Speaker] = []
-
+    
     /// The scrum meeting length.
     var lengthInMinutes: Int
     /// A closure that is executed when a new attendee begins speaking.
     var speakerChangedAction: (() -> Void)?
-
+    
     private var timer: Timer?
     private var timerStopped = false
     private var frequency: TimeInterval { 1.0 / 60.0 }
@@ -49,8 +49,8 @@ class ScrumTimer: ObservableObject {
      Use `startScrum()` to start the timer.
      
      - Parameters:
-        - lengthInMinutes: The meeting length.
-        -  attendees: The name of each attendee.
+         - lengthInMinutes: The meeting length.
+         -  attendees: The name of each attendee.
      */
     init(lengthInMinutes: Int = 0, attendees: [String] = []) {
         self.lengthInMinutes = lengthInMinutes
@@ -72,7 +72,7 @@ class ScrumTimer: ObservableObject {
     func skipSpeaker() {
         changeToSpeaker(at: speakerIndex + 1)
     }
-
+    
     private func changeToSpeaker(at index: Int) {
         if index > 0 {
             let previousSpeakerIndex = index - 1
@@ -82,7 +82,7 @@ class ScrumTimer: ObservableObject {
         guard index < speakers.count else { return }
         speakerIndex = index
         activeSpeaker = speakerText
-
+        
         secondsElapsed = index * secondsPerSpeaker
         secondsRemaining = lengthInSeconds - secondsElapsed
         startDate = Date()
@@ -93,7 +93,7 @@ class ScrumTimer: ObservableObject {
             }
         }
     }
-
+    
     private func update(secondsElapsed: Int) {
         secondsElapsedForSpeaker = secondsElapsed
         self.secondsElapsed = secondsPerSpeaker * speakerIndex + secondsElapsedForSpeaker
@@ -101,9 +101,9 @@ class ScrumTimer: ObservableObject {
             return
         }
         secondsRemaining = max(lengthInSeconds - self.secondsElapsed, 0)
-
+        
         guard !timerStopped else { return }
-
+        
         if secondsElapsedForSpeaker >= secondsPerSpeaker {
             changeToSpeaker(at: speakerIndex + 1)
             speakerChangedAction?()

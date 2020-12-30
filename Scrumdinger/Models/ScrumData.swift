@@ -18,13 +18,13 @@ class ScrumData: ObservableObject {
             fatalError("Can't find documents directory.")
         }
     }
-
+    
     private static var fileURL: URL {
         return documentsFolder.appendingPathComponent("scrums.data")
     }
-
+    
     @Published var scrums: [DailyScrum] = []
-
+    
     func load() {
         DispatchQueue.global(qos: .background).async { [weak self] in
             guard let data = try? Data(contentsOf: Self.fileURL) else {
@@ -43,7 +43,7 @@ class ScrumData: ObservableObject {
             }
         }
     }
-
+    
     func save() {
         DispatchQueue.global(qos: .background).async { [weak self] in
             guard let scrums = self?.scrums else { fatalError("Self out of scope") }

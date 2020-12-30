@@ -14,7 +14,7 @@ struct DailyScrum: Identifiable, Codable {
     var lengthInMinutes: Int
     var color: Color
     var history: [History]
-
+    
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, color: Color, history: [History] = []) {
         self.id = id
         self.title = title
@@ -42,7 +42,7 @@ extension DailyScrum {
         var lengthInMinutes: Double = 5.0
         var color: Color = .random
     }
-
+    
     var data: Data {
         return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
     }
