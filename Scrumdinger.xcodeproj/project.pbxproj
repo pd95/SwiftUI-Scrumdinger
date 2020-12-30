@@ -26,6 +26,8 @@
 		178193A3259D178B00F2F0D5 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178193A2259D178B00F2F0D5 /* History.swift */; };
 		178193A6259D312700F2F0D5 /* ScrumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178193A5259D312700F2F0D5 /* ScrumData.swift */; };
 		178193AA259D362500F2F0D5 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178193A9259D362500F2F0D5 /* MeetingTimerView.swift */; };
+		178193AD259D38B400F2F0D5 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178193AC259D38B400F2F0D5 /* SpeechRecognizer.swift */; };
+		178193B0259D3A1C00F2F0D5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178193AF259D3A1C00F2F0D5 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		178193A2259D178B00F2F0D5 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		178193A5259D312700F2F0D5 /* ScrumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumData.swift; sourceTree = "<group>"; };
 		178193A9259D362500F2F0D5 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		178193AC259D38B400F2F0D5 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		178193AF259D3A1C00F2F0D5 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				17819377259CEBE700F2F0D5 /* ScrumsView.swift */,
 				1781937B259CEED800F2F0D5 /* DetailView.swift */,
 				1781937E259CF20400F2F0D5 /* EditView.swift */,
+				178193AF259D3A1C00F2F0D5 /* HistoryView.swift */,
 				17819375259CE86D00F2F0D5 /* Models */,
 				1781939E259CFDDB00F2F0D5 /* Resources */,
 				1781935D259CE16500F2F0D5 /* Assets.xcassets */,
@@ -120,6 +125,7 @@
 				178193A2259D178B00F2F0D5 /* History.swift */,
 				178193A5259D312700F2F0D5 /* ScrumData.swift */,
 				17819388259CFABB00F2F0D5 /* ScrumTimer.swift */,
+				178193AC259D38B400F2F0D5 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,9 +211,11 @@
 				1781935C259CE16400F2F0D5 /* MeetingView.swift in Sources */,
 				17819378259CEBE700F2F0D5 /* ScrumsView.swift in Sources */,
 				178193A3259D178B00F2F0D5 /* History.swift in Sources */,
+				178193AD259D38B400F2F0D5 /* SpeechRecognizer.swift in Sources */,
 				1781937F259CF20400F2F0D5 /* EditView.swift in Sources */,
 				17819389259CFABB00F2F0D5 /* AVPlayer+Ding.swift in Sources */,
 				178193A6259D312700F2F0D5 /* ScrumData.swift in Sources */,
+				178193B0259D3A1C00F2F0D5 /* HistoryView.swift in Sources */,
 				178193AA259D362500F2F0D5 /* MeetingTimerView.swift in Sources */,
 				1781938E259CFBF500F2F0D5 /* MeetingFooterView.swift in Sources */,
 				17819382259CF8A000F2F0D5 /* MeetingHeaderView.swift in Sources */,
